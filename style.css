@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+  background: #f9f9f9;
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+}
+button {
+  padding: 0.5rem 1rem;
+  background: #007acc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+#outputText {
+  margin-top: 1rem;
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  white-space: pre-wrap;
+}
