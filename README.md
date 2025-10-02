@@ -8,7 +8,7 @@ A free, fast, and privacy-friendly online tool to clean and format your text. Re
 - Format text for SEO or publishing
 
 ## Live Demo
-👉 [https://pikazor.github.io/text-editor](https://pikazor.github.io/text-edtior)
+👉 https://pikazor.github.io/text-editor/
 
 ## License
 MIT
