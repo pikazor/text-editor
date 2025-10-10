@@ -1,29 +1,141 @@
 body {
-  font-family: sans-serif;
-  background: #f9f9f9;
-  padding: 2rem;
-  max-width: 600px;
-  margin: auto;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
+
 textarea {
+  resize: vertical;
+}
+
+#adPreview {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #toolButtons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+textarea, input[type="text"] {
   width: 100%;
-  height: 150px;
   margin-bottom: 1rem;
   padding: 1rem;
   font-size: 1rem;
 }
 button {
   padding: 0.5rem 1rem;
+  background: #eee;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+#toolButtons {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+#toolButtons button.active {
   background: #007acc;
   color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
+  border-color: #007acc;
+}
+#inputArea {
+  margin-bottom: 1rem;
 }
 #outputText {
-  margin-top: 1rem;
   background: #fff;
   padding: 1rem;
   border: 1px solid #ccc;
   white-space: pre-wrap;
 }
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+#charCountInput, #charCountOutput {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+/* 
+https://www.instagram.com/mariajose_coira/
+https://www.instagram.com/tayashotton/
+https://www.instagram.com/aisultanaonly/
+https://www.instagram.com/fine__josie/
+https://www.instagram.com/heninamadara/
+https://www.instagram.com/natalialuccass/
+https://www.instagram.com/sophia_apt/
+https://www.instagram.com/al.leshan/
+https://www.instagram.com/lottiemossxo/
+https://www.instagram.com/sophielaurenxxo/
+https://www.instagram.com/emilyyfiore/
+https://www.instagram.com/_ginlennon__/
+https://www.instagram.com/lorenapeach/
+https://www.instagram.com/hopeannd/
+https://www.instagram.com/gracedzeja_/
+https://www.instagram.com/elsie/
+https://www.instagram.com/kateghiter/
+https://www.instagram.com/victoriamelons/
+https://www.instagram.com/nazksomek/
+https://www.instagram.com/nadiajemez/?e=59b220e2-917c-4751-a19e-2202c69ea6d1&g=5
+https://www.instagram.com/amalie.valentin/?e=8b002c04-6588-40c5-855a-b8e6f61a2248&g=5
+https://www.instagram.com/amalie.valentin/?e=0f233b55-fc97-4de8-86c1-837cce3b24cc&g=5
+https://www.instagram.com/nicagimenez/?e=d4e78fa1-665f-4771-8f0c-c987cd43509f&g=5
+https://www.instagram.com/keniabarbosar/?e=a17bff3b-41d9-4aa1-8643-4deb4088c42d&g=5
+https://www.instagram.com/mia.jennie/?e=78e5cfa2-bfeb-493c-8486-91b99e7f79cf&g=5
+https://www.instagram.com/kyeliseeva/?e=9846e67f-e66c-42db-83e4-2fd512bbd995&g=5
+https://www.instagram.com/chiara_parravicini/?e=b5658193-ccca-43f3-9a42-62c6ceb1e940&g=5
+https://www.instagram.com/graceyalexandria/?e=ac6f9b63-ddb5-4f80-baef-a35f5d16b438&g=5
+https://www.instagram.com/__stonem___/?e=a0cb3a27-27a3-40b4-9d21-bb481c65b7dd&g=5
+https://www.instagram.com/elizalowrie/?e=be77fc5b-49d7-4adb-9ea2-6fd33eae27b3&g=5
+https://www.instagram.com/realanajalandoni/?e=f3eca0d5-f94f-4d6b-b681-14fac351264a&g=5
+https://www.instagram.com/nadiajemez/?e=8bdbe56f-4b54-4bf3-9b13-e595409f62b5&g=5
+https://www.instagram.com/felicitasmariaa/?e=561e85b4-c20d-4b4b-8496-44c5e670ed1b&g=5
+https://www.instagram.com/missamyshadbolt/?e=38aa4c5a-53ba-4be1-88fc-7c66053f9d77&g=5
+https://www.instagram.com/p/DPZXlqeDm_l/
+https://www.instagram.com/p/DPMV0L4kTR_/
+https://www.instagram.com/p/DPL5bhCjPw3/
+https://www.instagram.com/p/DO_VO_jAcWa/
+https://www.instagram.com/sammyjjo/
+https://www.instagram.com/murrrka/
+https://www.instagram.com/s.g.__model/
+https://www.instagram.com/serayydura/
+https://www.instagram.com/alinaaboyko/
+https://www.instagram.com/natalieroush/
+https://www.instagram.com/juliyasteff/
+https://www.instagram.com/miss_nairagishian/
+https://www.instagram.com/natalie_roser/
+https://www.instagram.com/mathildtantot/
+https://www.instagram.com/spirite_moon/
+https://www.instagram.com/saritaktty/
+https://www.instagram.com/noa.mnk/
+https://www.instagram.com/aybukerdogannnn/
+https://www.instagram.com/dayanehofer/?hl=tr&e=2b443d13-3773-4cbd-a840-bb02103c9707&g=5
+https://www.instagram.com/biancaviegas/?hl=tr&e=23307ddd-48a9-4ba7-9912-b614acea9178&g=5
+https://www.instagram.com/alicya_simmons/?hl=tr&e=524d43c2-a42f-4a45-899d-f1f2069aa799&g=5
+https://www.instagram.com/chiara_parravicini/?hl=tr&e=62c5d37d-2fd9-4606-8044-335153c903bb&g=5
+https://www.instagram.com/nikishushu2/?hl=tr&e=d5145e19-1214-4adf-a4a0-d811c20aac7a&g=5
+https://www.instagram.com/brittanyhoffner/?hl=tr&e=88c2a1e3-42ea-45be-b173-d52feb21f89a&g=5
+https://www.instagram.com/elina_tmr/?hl=tr&e=7146467b-91cb-455a-ac4a-90cbc9b2a498&g=5
+https://www.instagram.com/valeriadelrey/?hl=tr&e=057b01f2-1d5e-48c2-b00b-413fd6faf23a&g=5
+https://www.instagram.com/kikiboyshow/?hl=tr&e=4e035db5-5119-4654-9844-3b288e72ab30&g=5
+https://www.instagram.com/jialissaonly/?hl=tr
+https://www.instagram.com/bellaeftene/?hl=tr&e=abcdfbbd-f2fc-4c3e-a19e-e1dc301ef391&g=5
+https://www.instagram.com/steeisyy9/?e=11b76104-0b35-4fa0-9f2e-0e1dcbac2145&g=5
+https://www.instagram.com/martilariguet/?e=1bad0291-2215-4770-9f0a-e4e0211008b0&g=5
+https://www.instagram.com/brookeomillerrr/?e=da687274-eaca-4914-8ba0-d7e17cd3e20a&g=5
+https://www.instagram.com/yagmurcepnii/
+https://www.instagram.com/elenaaa.isabelll/
+https://www.instagram.com/albanocami/?e=e3143fed-b9da-42b7-923f-1c4f07c303ee&g=5
+https://www.instagram.com/ninafdj/
+
+*/
