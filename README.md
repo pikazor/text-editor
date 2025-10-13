@@ -10,7 +10,6 @@
 
 - 🔤 **Keyword Cleaner** — Remove unwanted words from text
 - 🔁 **Keyword Replacer** — Replace multiple keywords with custom values
-- 🧾 **HTML Converter** — Convert plain text to HTML-safe format
 - 📄 **Text File to PDF** — Upload `.txt` files and export multi-page A4 PDFs
 - 📱 **Fully Responsive** — Optimized for mobile and desktop
 - 📦 **No Dependencies Required** — Uses CDN for jsPDF and html2pdf.js
