@@ -1,6 +1,0 @@
-title: Text Tools Blog
-description: A blog about PDF creation, text cleaning, and web tools
-baseurl: "" # özel alan adın varsa boş bırak
-url: "https://texteditor.run.place"
-markdown: kramdown
-theme: minima
