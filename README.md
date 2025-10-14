@@ -2,7 +2,7 @@
 
 **Text Tools** is a lightweight, mobile-friendly web application that offers multiple utilities for working with plain text. Built with vanilla JavaScript and Bootstrap 5, it allows users to clean, convert, and export text with ease — including generating A4-standard PDFs from `.txt` files.
 
-🌐 Live Site: texteditor.run.place/
+🌐 Live Site: [texteditor.run.place/](https://texteditor.run.place/)
 
 ---
 
