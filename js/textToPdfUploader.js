@@ -5,6 +5,7 @@ function renderTextToPdfUploader() {
       <input type="file" id="textFileInput" accept=".txt" class="form-control">
     </div>
     <div class="d-flex gap-2 flex-wrap">
+    <label style="color: red;" for="replacements" class="form-label">scan the file first</label>
       <button onclick="loadTextToHtmlPanel()" class="btn btn-primary">Scanning</button>
       <button onclick="convertPanelToPDF()" class="btn btn-success">Convert to PDF</button>
     </div>
@@ -100,4 +101,5 @@ function escapeHtml(text) {
 function updateOutput(message) {
   document.getElementById("outputText").innerText = message;
 }
+
 
