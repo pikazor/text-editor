@@ -5,7 +5,7 @@ function renderTextToPdfUploader() {
       <input type="file" id="textFileInput" accept=".txt" class="form-control">
     </div>
     <div class="d-flex gap-2 flex-wrap">
-      <button onclick="loadTextToHtmlPanel()" class="btn btn-primary">Show in Panel</button>
+      <button onclick="loadTextToHtmlPanel()" class="btn btn-primary">Scanning</button>
       <button onclick="convertPanelToPDF()" class="btn btn-success">Convert to PDF</button>
     </div>
     <div id="charCountFile" class="mt-3 fw-bold text-secondary"></div>
@@ -58,7 +58,7 @@ function loadTextToHtmlPanel() {
 function convertPanelToPDF() {
   const panel = document.getElementById("a4Panel");
   if (!panel) {
-    updateOutput("No panel content to convert.");
+    updateOutput("No panel content to convert.\nscan the file first");
     return;
   }
 
@@ -100,3 +100,4 @@ function escapeHtml(text) {
 function updateOutput(message) {
   document.getElementById("outputText").innerText = message;
 }
+
